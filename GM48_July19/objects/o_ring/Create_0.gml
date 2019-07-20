@@ -7,8 +7,10 @@ y = origin_y;
 t = 0;
 
 dot_offset = 0;
-spin_speed = 2;
+spin_speed = 5;
 
 for (i = 0; i < 3; i++) {
 	dots[i] = instance_create_depth(x, y, 0, o_dot);
 }
+
+image_alpha = 0.25;
