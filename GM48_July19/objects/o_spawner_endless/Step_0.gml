@@ -22,15 +22,32 @@ switch (global.difficulty) {
 		break;
 		
 	case 5: // Spawn 1 speed rotating box
-		spawner_top_range = 150;
+		spawner_top_range = 250;
 		break;
 		
 	case 6: // Spawn 1 or 2 speed rotating box
-		spawner_top_range = 200;
+		spawner_top_range = 300;
 		break;
 		
 	case 7: // Spawn 1 or 2 speed dot, box, or rotating box
 		spawner_top_range = 200;
+		break;
+		
+	case 8:
+		spawner_top_range = 175;
+		break;
+		
+	case 9:
+		spawner_top_range = 150;
+		break;
+		
+	case 10:
+		spawner_top_range = 125;
+		break;
+		
+	case 11:
+	default:
+		spawner_top_range = 100;
 		break;
 }
 
@@ -114,7 +131,7 @@ if (spawn) {
 			
 		case 5:
 			// Spawn 1 speed rotating box
-			scr_spawn_obstacle(o_obstacle_box, 1, true);
+			scr_spawn_obstacle(o_obstacle_box_long, 1, true);
 			break;
 			
 		case 6:
@@ -122,10 +139,10 @@ if (spawn) {
 			var rand = irandom_range(0, 1);
 	
 			if (rand == 0) {
-				scr_spawn_obstacle(o_obstacle_dot, 1, false);	
+				scr_spawn_obstacle(o_obstacle_box_long, 1, true);	
 			}
 			else if (rand == 1) {
-				scr_spawn_obstacle(o_obstacle_dot, 2, false);
+				scr_spawn_obstacle(o_obstacle_box_long, 2, true);
 			}
 			break;
 			
@@ -147,10 +164,10 @@ if (spawn) {
 				scr_spawn_obstacle(o_obstacle_box, 2, false);
 			}
 			else if (rand == 4) { 
-				scr_spawn_obstacle(o_obstacle_box, 1, true);
+				scr_spawn_obstacle(o_obstacle_box_long, 1, true);
 			}
 			else if (rand == 5) {
-				scr_spawn_obstacle(o_obstacle_box, 2, true);
+				scr_spawn_obstacle(o_obstacle_box_long, 2, true);
 			}
 			break;
 	}

@@ -10,6 +10,9 @@ var obj_spinning = argument2;
 // point[1] = xVal
 // point[2] = yVal
 var point = scr_get_edge_point();
+while (!place_empty(point[1], point[2])) {
+	point = scr_get_edge_point();
+}
 
 obstacle = instance_create_depth(point[1], point[2], 0, obj);
 switch (point[0]) {
