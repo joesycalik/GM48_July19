@@ -2,7 +2,7 @@
     "id": "1740944f-8ca7-4479-a905-6be448b71b4f",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_obstacle",
+    "name": "spr_obstacle_box",
     "For3D": false,
     "HTile": false,
     "VTile": false,

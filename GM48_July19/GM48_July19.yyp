@@ -66,7 +66,7 @@
             "Key": "1740944f-8ca7-4479-a905-6be448b71b4f",
             "Value": {
                 "id": "d8ed8235-16d5-4469-b94c-b019f79b28b7",
-                "resourcePath": "sprites\\spr_obstacle\\spr_obstacle.yy",
+                "resourcePath": "sprites\\spr_obstacle_box\\spr_obstacle_box.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -84,6 +84,14 @@
                 "id": "acc0e846-f64e-4334-a1f0-1d1b77124109",
                 "resourcePath": "views\\2bf82cd2-224d-4a04-85c0-774debce2542.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2ff7b1b6-5995-41b2-9a3a-bce2e09fa7ca",
+            "Value": {
+                "id": "6a9fc818-ba13-4825-b68c-eb9f58d2d165",
+                "resourcePath": "sprites\\spr_obstacle_box_long\\spr_obstacle_box_long.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -143,6 +151,14 @@
             }
         },
         {
+            "Key": "6b705ca6-030a-471e-a6ca-cfb06afb3a4a",
+            "Value": {
+                "id": "82624799-90a0-4ccc-a69d-c00bfcb4a098",
+                "resourcePath": "scripts\\scr_get_edge_point\\scr_get_edge_point.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "71068786-8eb7-4d97-af1a-5e59619f2fc2",
             "Value": {
                 "id": "60de8a33-57d4-4658-9ab6-c9d5aabb69d7",
@@ -199,6 +215,14 @@
             }
         },
         {
+            "Key": "9dbfa81f-1647-4cbd-8ab5-56776a35aead",
+            "Value": {
+                "id": "2f0d1a0b-2791-40f8-b6e5-001b89db3a85",
+                "resourcePath": "scripts\\macros\\macros.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9e903be6-d117-49c9-972d-bc0eb715272f",
             "Value": {
                 "id": "44a0d181-cc66-44af-964b-d3ea41993279",
@@ -218,7 +242,7 @@
             "Key": "b2372be0-cbdd-479c-ac82-30e66de23d1e",
             "Value": {
                 "id": "202989e5-a2b2-4bae-8196-51127c4cb465",
-                "resourcePath": "objects\\o_spawner\\o_spawner.yy",
+                "resourcePath": "objects\\o_spawner_endless\\o_spawner_endless.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -252,6 +276,14 @@
                 "id": "c6cca0fd-4ac6-4d41-9e01-d338e2f48b35",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "da5cbe44-acf7-4bbc-9215-f76fe5715284",
+            "Value": {
+                "id": "12fd7d8f-f995-4c18-9d40-4fff808bb6cf",
+                "resourcePath": "scripts\\scr_spawn_obstacle\\scr_spawn_obstacle.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -304,7 +336,10 @@
         }
     ],
     "script_order": [
-        "da6e2310-426a-418b-a772-87ed1f1cd2d7"
+        "da6e2310-426a-418b-a772-87ed1f1cd2d7",
+        "da5cbe44-acf7-4bbc-9215-f76fe5715284",
+        "9dbfa81f-1647-4cbd-8ab5-56776a35aead",
+        "6b705ca6-030a-471e-a6ca-cfb06afb3a4a"
     ],
     "tutorial": ""
 }
