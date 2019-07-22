@@ -1,6 +1,6 @@
 global.game_over = false;
 global.player_score = 0;
-global.difficulty = 7;
+global.difficulty = 0;
 global.seconds_passed = 0;
 
 end_screen_spawned = false;
