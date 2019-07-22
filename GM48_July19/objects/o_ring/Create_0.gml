@@ -1,7 +1,7 @@
 origin_x = room_width / 2;
 origin_y = room_height / 2;
 ring_radius = spr_ring.sprite_height / 2;
-movement_radius = 300;
+movement_radius = room_width / 4;
 x = origin_x;
 y = origin_y;
 t = 0;

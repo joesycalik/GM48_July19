@@ -12,12 +12,12 @@ y = origin_y - movement_radius * sin(degtorad(t));
 t += 0.5 + (0.05 * (global.difficulty / 2));
 
 // Rotate dots left
-if (keyboard_check(ord("A"))) {
+if (keyboard_check(ord("A")) || keyboard_check(vk_left)) {
 	dot_offset += 1 * spin_speed;
 }
 
 // Rotate dots right
-if (keyboard_check(ord("D"))) {
+if (keyboard_check(ord("D")) || keyboard_check(vk_right)) {
 	dot_offset -= 1 * spin_speed;
 }
 
