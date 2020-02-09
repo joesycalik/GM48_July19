@@ -1,10 +1,13 @@
 origin_x = room_width / 2;
 origin_y = room_height / 2;
 ring_radius = spr_ring.sprite_height / 2;
-movement_radius = room_width / 4;
+movement_radius = room_width / 4; // Portrait
+//movement_radius = room_height / 4; // Landscape
 x = origin_x;
 y = origin_y;
 t = 0;
+
+move_speed = 4;
 
 dot_offset = 0;
 spin_speed = 3;
@@ -20,3 +23,5 @@ for (i = 0; i < 3; i++) {
 }
 
 image_alpha = 0.25;
+
+dir = 0;

@@ -1,5 +1,10 @@
-x = origin_x + movement_radius * cos(degtorad(t));
-y = origin_y - movement_radius * sin(degtorad(t));
+x = origin_x + movement_radius * cos(degtorad(t)); // Portrait
+y = origin_y - movement_radius * 2 * sin(degtorad(t)); // Portrait
+
+//x = origin_x + movement_radius * 2 * cos(degtorad(t)); // Landscape
+//y = origin_y - movement_radius * sin(degtorad(t)); // Landscape
+
+t += 0.25 + (0.05 * (global.difficulty / 2));
 //Ring movement speed
 //if (global.difficulty < 3) {
 //	t += 0.5;
@@ -9,7 +14,13 @@ y = origin_y - movement_radius * sin(degtorad(t));
 //else {
 //	t += 1;	
 //}
-t += 0.5 + (0.05 * (global.difficulty / 2));
+
+
+//if (x < 200) dir = 0;
+//if (x > 1280) dir = 1;
+
+//if (dir == 0) x += move_speed;
+//else if (dir == 1) x -= move_speed;
 
 // Rotate dots left
 if (keyboard_check(ord("A")) || keyboard_check(vk_left)) {
